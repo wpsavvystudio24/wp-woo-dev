@@ -39,4 +39,11 @@ function add_additional_class_on_a($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+function mytheme_add_woocommerce_support() {
+    add_theme_support('woocommerce');
+}
+
+add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
+
 ?>
