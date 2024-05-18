@@ -1,0 +1,11 @@
+.custom-social-share {
+    margin-top: 20px;
+}
+.custom-social-share a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
