@@ -31,7 +31,7 @@ function custom_social_share_buttons() {
     $product_title = $product->get_name();
     $product_image = wp_get_attachment_url( $product->get_image_id() );
 
-    echo '<div class="custom-social-share">';
+    echo '<div id="test-id" class="custom-social-share">';
     echo '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $product_url ) . '" target="_blank" class="btn btn-outline-primary me-2"><i class="bi bi-facebook"></i> Facebook</a>';
     echo '<a href="https://twitter.com/intent/tweet?url=' . urlencode( $product_url ) . '&text=' . urlencode( $product_title ) . '" target="_blank" class="btn btn-outline-info me-2"><i class="bi bi-twitter"></i> Twitter</a>';
     echo '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' . urlencode( $product_url ) . '&title=' . urlencode( $product_title ) . '" target="_blank" class="btn btn-outline-primary me-2"><i class="bi bi-linkedin"></i> LinkedIn</a>';
